@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
@@ -183,12 +183,12 @@ a {
     margin-bottom: 0;
 }
 
-.bordered {
-    border-bottom: 1px dotted #757575 ;
+.content p {
+    text-align: justify;
 }
 
-.item p {
-    text-align: justify;
+.bordered {
+    border-bottom: 1px dotted #757575 ;
 }
 
 .itemsecondary {
