@@ -206,12 +206,17 @@ a {
 
 /* ----------------------- Media Queries ----------------------- */
 @media (min-width: 768px){
+    /* -------- body -------- */
     .pagecontainer {
         width: 100%;
         max-width: 1080px;
         margin: 0 auto;
     }
-
+    /* -------- header -------- */
+    header {
+        flex-direction: row;
+    }
+    
     .intro {
         align-items: center;
         justify-content: start;
@@ -220,7 +225,6 @@ a {
     .introcontent {
         text-align: left;
         padding-left: 40px;
-
     }
 
     .introcontent p {
@@ -238,15 +242,11 @@ a {
     .intro, .col-r {
         width: calc((100% / 3) *2)
     }
-
-    header {
-        flex-direction: row;
-    }
-
+    /* -------- main -------- */
     main {
         flex-direction: row;
     }
-
+    /* -------- col-r -------- */
     .block {
         padding-left: 40px;
         padding-right: 40px;
