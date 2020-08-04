@@ -1,0 +1,129 @@
+/* ------------- body ------------- */
+body {
+    @include body;
+}
+
+/* ------------- header ------------- */
+header {
+    @include header;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: auto;
+}
+
+.menu {
+    @include menudisplay;
+}
+
+.menu2 {
+    background-color: #FEF3F3;
+    font-family: 'Katibeh', cursive;
+
+    h2 {
+        background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
+        background-clip: border-box;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .starters {
+        color: #cc7a00;
+
+        #Calque_1 {
+            fill: url(#Calque_1) #cc7a00;
+        }
+
+        p {
+            &:after {
+                content: ' ';
+                position: absolute;
+                height: 3px;
+                background-color: #cc7a00;
+                border-radius: 4rem;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                transition: width 500ms ease;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
+
+    .meals {
+        color: #990099;
+        #Calque_2 {
+            fill: url(#Calque_2) #990099;
+        }
+
+        p {
+            &:after {
+                content: ' ';
+                position: absolute;
+                height: 3px;
+                background-color: #990099;
+                border-radius: 4rem;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                transition: width 500ms ease;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
+
+    .desserts {
+        color: #7300e6;
+        #Calque_3 {
+            fill: url(#Calque_3) #7300e6;
+        }
+
+        p {
+            &:after {
+                content: ' ';
+                position: absolute;
+                height: 3px;
+                background-color: #7300e6;
+                border-radius: 4rem;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                transition: width 500ms ease;
+            }
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
+
+    table {
+        tr {
+            td {
+                padding-top: 15px;
+                &:nth-child(1) {
+                    text-align: left;
+                }
+                &:nth-child(2) {
+                    font-weight: bold;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+/* ------------- footer ------------- */
+footer {
+    @include footer;
+}

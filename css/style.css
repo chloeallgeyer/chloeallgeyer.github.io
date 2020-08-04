@@ -1,0 +1,993 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+/* ------------- body ------------- */
+/* ------------- fonts ------------- */
+/* ------------- cards ------------- */
+@keyframes loading-dots {
+  50% {
+    opacity: 0;
+    transform: scale(0.7) translateY(5px);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  margin: 30px;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.menu section {
+  margin-bottom: 50px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.menu__header h2 {
+  font-size: 50px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+  width: 90%;
+}
+.menu__body__title {
+  display: flex;
+  width: 100%;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer h3 {
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__footer i {
+  margin-right: 15px;
+}
+
+.menu1 {
+  background-color: #f9d2d2;
+  font-family: "Devonshire", cursive;
+}
+.menu1 p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu1 p:hover:after {
+  width: 100%;
+}
+
+table tr td {
+  padding: 10px;
+}
+table tr td:nth-child(1) {
+  text-align: left;
+}
+table tr td:nth-child(2) {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  margin: 30px;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.menu section {
+  margin-bottom: 50px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.menu__header h2 {
+  font-size: 50px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+  width: 90%;
+}
+.menu__body__title {
+  display: flex;
+  width: 100%;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer h3 {
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__footer i {
+  margin-right: 15px;
+}
+
+.menu2 {
+  background-color: #FEF3F3;
+  font-family: "Katibeh", cursive;
+}
+.menu2 h2 {
+  background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.menu2 .starters {
+  color: #cc7a00;
+}
+.menu2 .starters #Calque_1 {
+  fill: url(#Calque_1) #cc7a00;
+}
+.menu2 .starters p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #cc7a00;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu2 .starters p:hover:after {
+  width: 100%;
+}
+.menu2 .meals {
+  color: #990099;
+}
+.menu2 .meals #Calque_2 {
+  fill: url(#Calque_2) #990099;
+}
+.menu2 .meals p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #990099;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu2 .meals p:hover:after {
+  width: 100%;
+}
+.menu2 .desserts {
+  color: #7300e6;
+}
+.menu2 .desserts #Calque_3 {
+  fill: url(#Calque_3) #7300e6;
+}
+.menu2 .desserts p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #7300e6;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu2 .desserts p:hover:after {
+  width: 100%;
+}
+.menu2 table tr td {
+  padding-top: 15px;
+}
+.menu2 table tr td:nth-child(1) {
+  text-align: left;
+}
+.menu2 table tr td:nth-child(2) {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  margin: 30px;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.menu section {
+  margin-bottom: 50px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.menu__header h2 {
+  font-size: 50px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+  width: 90%;
+}
+.menu__body__title {
+  display: flex;
+  width: 100%;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer h3 {
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__footer i {
+  margin-right: 15px;
+}
+
+.menu3 {
+  background-color: #eeeef6;
+}
+.menu3 h2 {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom right, #0000b3 0%, #3385ff 70%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 50px;
+  padding: 3px;
+}
+.menu3 .starters #Calque_1 {
+  fill: url(#Calque_1) #0000cc;
+}
+.menu3 .starters p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #0000cc;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu3 .starters p:hover:after {
+  width: 100%;
+}
+.menu3 .meals #Calque_2 {
+  fill: url(#Calque_2) #3333ff;
+}
+.menu3 .meals p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #3333ff;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu3 .meals p:hover:after {
+  width: 100%;
+}
+.menu3 .desserts #Calque_3 {
+  fill: url(#Calque_3) #3385ff;
+}
+.menu3 .desserts p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: #3385ff;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu3 .desserts p:hover:after {
+  width: 100%;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.menucontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.menu {
+  margin: 30px;
+  padding: 80px 30px 80px 30px;
+  width: 80%;
+  height: 80%;
+  max-width: 800px;
+  max-height: 1200px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.menu section {
+  margin-bottom: 50px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.menu__header h2 {
+  font-size: 50px;
+  margin: 10px 0 30px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__body {
+  font-family: "Kalam", cursive;
+  width: 90%;
+}
+.menu__body__title {
+  display: flex;
+  width: 100%;
+}
+.menu__body__title p {
+  margin: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  white-space: nowrap;
+}
+.menu__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menu__footer h3 {
+  font-size: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+.menu__footer i {
+  margin-right: 15px;
+}
+
+.menu4 {
+  background-color: #fff;
+}
+.menu4 h2 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 50px;
+  padding: 5px;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+/* ------------- main ------------- */
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.menudisplay {
+  margin: 30px;
+  padding: 30px;
+  width: 50%;
+  height: 50%;
+  min-width: 360px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9d2d2;
+  font-family: "Devonshire", cursive;
+}
+
+.entete {
+  display: flex;
+  font-size: 25px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.meals {
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.prices {
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/* ------------- body ------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  color: #ffcc00;
+}
+
+/* ------------- header ------------- */
+header {
+  background-color: #569c87;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+header a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+
+/* ------------- main ------------- */
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.block a {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.block__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.block__item__card {
+  width: 400px;
+  height: 600px;
+  margin: 30px;
+  box-shadow: 0px 0px 8px #a6a6a6;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 {
+  background-color: #f9d2d2;
+}
+.card1 span:nth-child(2) {
+  font-family: "Devonshire", cursive;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 0;
+  color: black;
+}
+.card1 span:nth-child(3) {
+  font-family: "Sriracha", cursive;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 0;
+  color: black;
+}
+
+i {
+  background: linear-gradient(to right, #ff0066 0%, #ff9966 70%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card2 {
+  background-color: #FEF3F3;
+  font-family: "Katibeh", cursive;
+}
+.card2 span:nth-child(1) {
+  background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  margin: 0;
+  filter: brightness(120%);
+}
+.card2 span:nth-child(2) {
+  font-size: 50px;
+  color: #cc7a00;
+  font-weight: normal;
+  margin: 0;
+}
+
+.card3 {
+  background-color: #eeeef6;
+}
+.card3 span:nth-child(1) {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom right, #0000b3 0%, #3385ff 70%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  font-size: 40px;
+  padding: 3px;
+}
+.card3 span:nth-child(2) {
+  font-family: "Kalam", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  color: #3385ff;
+  margin: 0;
+}
+
+.card4 {
+  background-color: #fff;
+}
+.card4 span:nth-child(1) {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0;
+  padding: 5px;
+  font-size: 40px;
+}
+.card4 span:nth-child(2) {
+  font-family: "Kalam", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  color: #56b003;
+  margin: 0;
+}
+
+.title-wraper {
+  font-size: 25px;
+  cursor: pointer;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 500ms;
+}
+.title-wraper:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+/* ------------- aside ------------- */
+.pre-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 300px;
+  background-color: #569c87;
+  border: 1px solid #569c87;
+  border-radius: 10px;
+  margin: 30px auto 100px auto;
+  color: #ffcc00;
+}
+.pre-footer h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.loading span {
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #ffcc00;
+  display: inline-block;
+  animation: loading-dots 2s infinite ease-in-out;
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.loading span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/* ------------- footer ------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+footer p:hover {
+  animation: wiggle ease-in-out 500ms infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

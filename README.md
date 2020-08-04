@@ -1,2 +1,12 @@
-# P2 - CV en ligne
-[Lien vers ma page web](https://chloeallgeyer.github.io/)
+# P3
+
+### description
+
+* 1
+* 2
+
+Run sass:
+
+```
+sass --watch sass/main.scss:css/style.css
+```
