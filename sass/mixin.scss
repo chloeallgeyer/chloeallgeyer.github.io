@@ -102,6 +102,10 @@
                 white-space: nowrap;
             }
         }
+
+        svg {
+            flex-grow: 1;
+        }
     }
 
     &__footer {

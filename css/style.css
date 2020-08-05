@@ -122,6 +122,9 @@ header {
   position: relative;
   white-space: nowrap;
 }
+.menu__body svg {
+  flex-grow: 1;
+}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -261,6 +264,9 @@ header {
   font-weight: bold;
   position: relative;
   white-space: nowrap;
+}
+.menu__body svg {
+  flex-grow: 1;
 }
 .menu__footer {
   display: flex;
@@ -454,6 +460,9 @@ header {
   position: relative;
   white-space: nowrap;
 }
+.menu__body svg {
+  flex-grow: 1;
+}
 .menu__footer {
   display: flex;
   flex-direction: row;
@@ -628,6 +637,9 @@ header {
   font-weight: bold;
   position: relative;
   white-space: nowrap;
+}
+.menu__body svg {
+  flex-grow: 1;
 }
 .menu__footer {
   display: flex;
