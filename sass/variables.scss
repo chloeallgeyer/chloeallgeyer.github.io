@@ -4,10 +4,13 @@
 $color-txt: #ffcc00;
 $color-bg: #569c87;
 $color-bs: #a6a6a6;
+$icolor-stop-1: #ff0066;
+$icolor-stop-2: #ff9966;
 
-/* ------------- menus ------------- */
+/* ------------- MENUS ------------- */
 /* ------------- menu 1 ------------- */
 $menu1-color-bg: #f9d2d2;
+$menu1-color-primary: black;
 /* ------------- menu 2 ------------- */
 $menu2-color-bg: #FEF3F3;
 $menu2-color-stop-1: #E38A12;
@@ -26,8 +29,11 @@ $menu4-color-bg: #fff;
 $menu4-color-stop-1: #3E923A;
 $menu4-color-stop-2: #BEFF7F;
 
-/* ------------- fonts ------------- */
-$font-menubody: 'Kalam', cursive;
-$font-menu1: 'Devonshire', cursive;
+/* ------------- FONTS ------------- */
+$menubody-font: 'Kalam', cursive;
+$menu1-font-primary: 'Devonshire', cursive;
+$menu1-font-secondary: 'Sriracha', cursive;
+$menu2-font-primary: 'Katibeh', cursive;
+$menu3-font-primary: 'Dancing Script', cursive;
+$menu4-font-primary: 'Kaushan Script', cursive;
 
-/* ------------- cards ------------- */

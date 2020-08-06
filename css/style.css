@@ -5,18 +5,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
 /* ------------- body ------------- */
-/* ------------- menus ------------- */
+/* ------------- MENUS ------------- */
 /* ------------- menu 1 ------------- */
 /* ------------- menu 2 ------------- */
 /* ------------- menu 3 ------------- */
 /* ------------- menu 4 ------------- */
-/* ------------- fonts ------------- */
-/* ------------- cards ------------- */
+/* ------------- FONTS ------------- */
 @keyframes loading-dots {
   50% {
     opacity: 0;
@@ -147,6 +146,23 @@ table tr td:nth-child(2) {
   background-color: #f9d2d2;
   font-family: "Devonshire", cursive;
 }
+.menu1 p {
+  position: relative;
+}
+.menu1 p:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  border-radius: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 500ms ease;
+}
+.menu1 p:hover:after {
+  width: 100%;
+}
 
 /* ------------- menu 2 ------------- */
 .menu2 {
@@ -163,8 +179,8 @@ table tr td:nth-child(2) {
 .menu2 .starters {
   color: #cc7a00;
 }
-.menu2 .starters #Calque_1 {
-  fill: url(#Calque_1) #cc7a00;
+.menu2 .starters .menu2-line1 {
+  fill: url(.menu2-line1) #cc7a00;
 }
 .menu2 .starters p {
   position: relative;
@@ -186,8 +202,8 @@ table tr td:nth-child(2) {
 .menu2 .meals {
   color: #990099;
 }
-.menu2 .meals #Calque_2 {
-  fill: url(#Calque_2) #990099;
+.menu2 .meals .menu2-line2 {
+  fill: url(.menu2-line2) #990099;
 }
 .menu2 .meals p {
   position: relative;
@@ -209,8 +225,8 @@ table tr td:nth-child(2) {
 .menu2 .desserts {
   color: #8F5AFF;
 }
-.menu2 .desserts #Calque_3 {
-  fill: url(#Calque_3) #8F5AFF;
+.menu2 .desserts .menu2-line3 {
+  fill: url(.menu2-line3) #8F5AFF;
 }
 .menu2 .desserts p {
   position: relative;
@@ -244,8 +260,8 @@ table tr td:nth-child(2) {
   margin: 50px;
   padding: 3px;
 }
-.menu3 .starters #Calque_1 {
-  fill: url(#Calque_1) #0825DB;
+.menu3 .starters .menu3-line1 {
+  fill: url(.menu3-line1) #0825DB;
 }
 .menu3 .starters p {
   position: relative;
@@ -264,8 +280,8 @@ table tr td:nth-child(2) {
 .menu3 .starters p:hover:after {
   width: 100%;
 }
-.menu3 .meals #Calque_2 {
-  fill: url(#Calque_2) #3333ff;
+.menu3 .meals .menu3-line2 {
+  fill: url(.menu3-line2) #3333ff;
 }
 .menu3 .meals p {
   position: relative;
@@ -284,8 +300,8 @@ table tr td:nth-child(2) {
 .menu3 .meals p:hover:after {
   width: 100%;
 }
-.menu3 .desserts #Calque_3 {
-  fill: url(#Calque_3) #0889FB;
+.menu3 .desserts .menu3-line3 {
+  fill: url(.menu3-line3) #0889FB;
 }
 .menu3 .desserts p {
   position: relative;
@@ -409,6 +425,27 @@ header a {
   justify-content: center;
 }
 
+i {
+  background: linear-gradient(to bottom right, #ff0066 30%, #ff9966 80%);
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.title-wraper {
+  font-size: 25px;
+  cursor: pointer;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 500ms;
+}
+.title-wraper:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+/* ------------- card 1 ------------- */
 .card1 {
   background-color: #f9d2d2;
 }
@@ -427,14 +464,7 @@ header a {
   color: black;
 }
 
-i {
-  background: linear-gradient(to right, #ff0066 0%, #ff9966 70%);
-  background-clip: border-box;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
+/* ------------- card 2 ------------- */
 .card2 {
   background-color: #FEF3F3;
   font-family: "Katibeh", cursive;
@@ -456,6 +486,7 @@ i {
   margin: 0;
 }
 
+/* ------------- card 3 ------------- */
 .card3 {
   background-color: #eeeef6;
 }
@@ -478,6 +509,7 @@ i {
   margin: 0;
 }
 
+/* ------------- card 4 ------------- */
 .card4 {
   background-color: #fff;
 }
@@ -498,18 +530,6 @@ i {
   font-weight: normal;
   color: #56b003;
   margin: 0;
-}
-
-.title-wraper {
-  font-size: 25px;
-  cursor: pointer;
-  transform: scale(1);
-  opacity: 1;
-  transition: all 500ms;
-}
-.title-wraper:hover {
-  transform: scale(1.2);
-  opacity: 0.5;
 }
 
 /* ------------- aside ------------- */

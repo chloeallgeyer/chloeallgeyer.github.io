@@ -41,7 +41,7 @@
     }
 
     &__body {
-        font-family: 'Kalam', cursive;
+        font-family: $menubody-font;
         width: 90%;
 
         &__title {
@@ -99,12 +99,13 @@ table {
 .menu1 {
     background-color: $menu1-color-bg;
     font-family: 'Devonshire', cursive;
+    @include title-underline($menu1-color-primary);
 }
 
 /* ------------- menu 2 ------------- */
 .menu2 {
     background-color: $menu2-color-bg;
-    font-family: 'Katibeh', cursive;
+    font-family: $menu2-font-primary;
 
     h2 {
         @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
@@ -112,10 +113,9 @@ table {
 
     .starters {
         color: $menu2-color-primary;
-        
 
-        #Calque_1 {
-            fill: url(#Calque_1) $menu2-color-primary;
+        .menu2-line1 {
+            fill: url(.menu2-line1) $menu2-color-primary;
         }
 
         @include title-underline($menu2-color-primary);
@@ -123,8 +123,9 @@ table {
 
     .meals {
         color: $menu2-color-secondary;
-        #Calque_2 {
-            fill: url(#Calque_2) $menu2-color-secondary;
+
+        .menu2-line2 {
+            fill: url(.menu2-line2) $menu2-color-secondary;
         }
 
         @include title-underline($menu2-color-secondary);
@@ -132,8 +133,9 @@ table {
 
     .desserts {
         color: $menu2-color-stop-2;
-        #Calque_3 {
-            fill: url(#Calque_3) $menu2-color-stop-2;
+
+        .menu2-line3 {
+            fill: url(.menu2-line3) $menu2-color-stop-2;
         }
 
         @include title-underline($menu2-color-stop-2);
@@ -146,30 +148,30 @@ table {
    
     h2 {
         @include title-gradient($menu3-color-stop-1, $menu3-color-stop-2); 
-        font-family: 'Dancing Script', cursive;
+        font-family: $menu3-font-primary;
         margin: 50px;
         padding: 3px;
     }
 
     .starters {
-        #Calque_1 {
-            fill: url(#Calque_1) $menu3-color-stop-1;
+        .menu3-line1 {
+            fill: url(.menu3-line1) $menu3-color-stop-1;
         }
 
         @include title-underline($menu3-color-stop-1);
     }
 
     .meals {
-        #Calque_2 {
-            fill: url(#Calque_2) $menu3-color-medium;
+        .menu3-line2 {
+            fill: url(.menu3-line2) $menu3-color-medium;
         }
 
         @include title-underline($menu3-color-medium);
     }
 
     .desserts {
-        #Calque_3 {
-            fill: url(#Calque_3) $menu3-color-stop-2;
+        .menu3-line3 {
+            fill: url(.menu3-line3) $menu3-color-stop-2;
         }
 
         @include title-underline($menu3-color-stop-2);
@@ -182,7 +184,7 @@ table {
     
     h2 {
         @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
-        font-family: 'Kaushan Script', cursive;
+        font-family: $menu4-font-primary;
         margin: 50px;
         padding: 5px;
     }

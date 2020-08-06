@@ -68,38 +68,49 @@ header {
     }
 }
 
+i {
+    @include title-gradient($icolor-stop-1, $icolor-stop-2);
+}
+
+.title-wraper {
+    font-size: 25px;
+    cursor: pointer;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 500ms;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
+
+/* ------------- card 1 ------------- */
 .card1 {
     background-color: $menu1-color-bg;
 
     span {
         &:nth-child(2) {
-            font-family: 'Devonshire', cursive;
+            font-family: $menu1-font-primary;
             font-weight: normal;
             font-size: 40px;
             margin: 0;
-            color: black; //DRY//
+            color: $menu1-color-primary; //DRY//
         }
         &:nth-child(3) {
-            font-family: 'Sriracha', cursive;
+            font-family: $menu1-font-secondary;
             font-size: 50px;
             font-weight: lighter; //precision//
             margin: 0;
-            color: black; //DRY//
+            color: $menu1-color-primary; //DRY//
         }
     }
 }
 
-i {
-    background: linear-gradient(to right,#ff0066 0%, #ff9966 70%);
-    background-clip: border-box;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
+/* ------------- card 2 ------------- */
 .card2 {
     background-color: $menu2-color-bg;
-    font-family: 'Katibeh', cursive;
+    font-family: $menu2-font-primary;
     span {
         &:nth-child(1) {
             @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
@@ -117,19 +128,20 @@ i {
     }
 }
 
+/* ------------- card 3 ------------- */
 .card3 {
     background-color: $menu3-color-bg;
 
     span {
         &:nth-child(1) {
             @include title-gradient($menu3-color-stop-1, $menu3-color-stop-2); 
-            font-family: 'Dancing Script', cursive;
+            font-family: $menu3-font-primary;
             margin: 0;
             font-size: 40px;
             padding: 3px;
         }
         &:nth-child(2) {
-            font-family: 'Kalam', cursive;
+            font-family: $menubody-font;
             font-size: 50px;
             font-weight: normal; //precision//
             color: #3385ff;
@@ -138,37 +150,25 @@ i {
     }
 }
 
+/* ------------- card 4 ------------- */
 .card4 {
     background-color: $menu4-color-bg;
     
     span {
         &:nth-child(1) {
-            font-family: 'Kaushan Script', cursive;
+            font-family: $menu4-font-primary;
             @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
             margin: 0;
             padding: 5px;
             font-size: 40px;
         }
         &:nth-child(2) {
-            font-family: 'Kalam', cursive;
+            font-family: $menubody-font;
             font-size: 50px;
             font-weight: normal; //precision//
             color: #56b003;
             margin: 0;
         }
-    }
-}
-
-.title-wraper {
-    font-size: 25px;
-    cursor: pointer;
-    transform: scale(1);
-    opacity: 1;
-    transition: all 500ms;
-
-    &:hover {
-        transform: scale(1.2);
-        opacity: 0.5;
     }
 }
 
