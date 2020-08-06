@@ -10,7 +10,6 @@ h2, h3, h4, h5, h6 {
 }
 
 /* ------------- body ------------- */
-/* ------------- MENUS ------------- */
 /* ------------- menu 1 ------------- */
 /* ------------- menu 2 ------------- */
 /* ------------- menu 3 ------------- */
@@ -66,15 +65,15 @@ h2, h3, h4, h5, h6 {
   color: black;
   margin: auto;
 }
+.menucontainer h1 {
+  font-size: 20px;
+}
 
 .menu {
-  margin: 30px;
-  padding: 80px 30px 80px 30px;
-  width: 80%;
-  height: 80%;
-  min-width: 375px;
-  max-width: 800px;
-  max-height: 2000px;
+  margin-top: 10px;
+  padding-top: 15px;
+  width: 90%;
+  height: 90%;
   box-shadow: 0px 0px 8px #a6a6a6;
   display: flex;
   flex-direction: column;
@@ -83,18 +82,17 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 100px;
 }
 .menu section {
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .menu__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px 0;
 }
 .menu__header h2 {
-  font-size: 50px;
-  margin: 10px 0 30px 0;
+  font-size: 30px;
   text-align: center;
   white-space: nowrap;
 }
@@ -177,10 +175,10 @@ table tr td:nth-child(2) {
   background-clip: text;
 }
 .menu2 .starters {
-  color: #cc7a00;
+  color: #C77412;
 }
 .menu2 .starters .menu2-line1 {
-  fill: url(.menu2-line1) #cc7a00;
+  fill: url(.menu2-line1) #C77412;
 }
 .menu2 .starters p {
   position: relative;
@@ -189,7 +187,7 @@ table tr td:nth-child(2) {
   content: " ";
   position: absolute;
   height: 3px;
-  background-color: #cc7a00;
+  background-color: #C77412;
   border-radius: 4rem;
   left: 0;
   bottom: 0;
@@ -257,8 +255,6 @@ table tr td:nth-child(2) {
   -webkit-background-clip: text;
   background-clip: text;
   font-family: "Dancing Script", cursive;
-  margin: 50px;
-  padding: 3px;
 }
 .menu3 .starters .menu3-line1 {
   fill: url(.menu3-line1) #0825DB;
@@ -281,7 +277,7 @@ table tr td:nth-child(2) {
   width: 100%;
 }
 .menu3 .meals .menu3-line2 {
-  fill: url(.menu3-line2) #3333ff;
+  fill: url(.menu3-line2) #0670F3;
 }
 .menu3 .meals p {
   position: relative;
@@ -290,7 +286,7 @@ table tr td:nth-child(2) {
   content: " ";
   position: absolute;
   height: 3px;
-  background-color: #3333ff;
+  background-color: #0670F3;
   border-radius: 4rem;
   left: 0;
   bottom: 0;
@@ -332,8 +328,6 @@ table tr td:nth-child(2) {
   -webkit-background-clip: text;
   background-clip: text;
   font-family: "Kaushan Script", cursive;
-  margin: 50px;
-  padding: 5px;
 }
 .menu4 p {
   position: relative;
@@ -414,12 +408,12 @@ header a {
   margin-bottom: 0;
 }
 .block__item__card {
-  width: 400px;
-  height: 600px;
-  margin: 30px;
+  width: 330px;
+  height: 330px;
+  margin: 10px;
   box-shadow: 0px 0px 8px #a6a6a6;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,7 +475,7 @@ i {
 }
 .card2 span:nth-child(2) {
   font-size: 50px;
-  color: #e67300;
+  color: #C77412;
   font-weight: normal;
   margin: 0;
 }
@@ -505,7 +499,7 @@ i {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;
-  color: #3385ff;
+  color: #0670F3;
   margin: 0;
 }
 
@@ -528,7 +522,7 @@ i {
   font-family: "Kalam", cursive;
   font-size: 50px;
   font-weight: normal;
-  color: #56b003;
+  color: #72BF56;
   margin: 0;
 }
 
@@ -583,11 +577,41 @@ footer p {
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
+  text-align: center;
 }
 footer p:hover {
   animation: wiggle ease-in-out 500ms infinite;
 }
 
 /* ------------- media queries ------------- */
+@media (min-width: 768px) {
+  .block__item__card {
+    width: 400px;
+    height: 600px;
+    margin: 30px;
+    font-size: 30px;
+  }
+
+  .menucontainer h1 {
+    font-size: 30px;
+  }
+
+  .menu {
+    margin: 20px 30px 100px 30px;
+    padding: 80px 30px 80px 30px;
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    max-height: 1200px;
+  }
+  .menu h2 {
+    font-size: 50px;
+    margin: 30px 0 30px 0;
+    padding: 0 5px;
+  }
+  .menu section {
+    margin-bottom: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

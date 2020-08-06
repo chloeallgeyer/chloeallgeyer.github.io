@@ -55,12 +55,12 @@ header {
         margin-bottom: 0;
 
         &__card {
-            width: 400px;
-            height: 600px;
-            margin: 30px;
+            width: 330px;
+            height: 330px;
+            margin: 10px;
             box-shadow: 0px 0px 8px $color-bs;
             text-align: center;
-            font-size: 30px;
+            font-size: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -121,7 +121,7 @@ i {
 
         &:nth-child(2) {
             font-size: 50px;
-            color: #e67300;
+            color: $menu2-color-primary;
             font-weight: normal; //precision//
             margin: 0;
         }
@@ -144,7 +144,7 @@ i {
             font-family: $menubody-font;
             font-size: 50px;
             font-weight: normal; //precision//
-            color: #3385ff;
+            color: $menu3-color-medium;
             margin: 0;
         }
     }
@@ -166,7 +166,7 @@ i {
             font-family: $menubody-font;
             font-size: 50px;
             font-weight: normal; //precision//
-            color: #56b003;
+            color: $menu4-color-medium;
             margin: 0;
         }
     }
@@ -215,14 +215,18 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+
     a {
         text-decoration: none;
         color: $color-txt;
     }
+
     p {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
+    text-align: center;
+
         &:hover {
             animation: wiggle ease-in-out 500ms infinite;
         }
@@ -230,3 +234,33 @@ footer {
 }
 
 /* ------------- media queries ------------- */
+@media (min-width: 768px) {
+    .block__item__card {
+        width: 400px;
+        height: 600px;
+        margin: 30px;
+        font-size: 30px;
+    }
+
+    .menucontainer h1 {
+        font-size: 30px;
+    }
+    .menu {
+        margin: 20px 30px 100px 30px;
+        padding: 80px 30px 80px 30px;
+        width: 80%;
+        height: 80%;
+        max-width: 800px;
+        max-height: 1200px;
+
+        h2 {
+            font-size: 50px;
+            margin: 30px 0 30px 0;
+            padding: 0 5px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+    }
+}
