@@ -1,0 +1,210 @@
+/* ------------- general ------------- */
+.menucontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: auto;
+}
+.menu {
+    margin: 30px;
+    padding: 80px 30px 80px 30px;
+    width: 80%;
+    height: 80%;
+    min-width: 375px;
+    max-width: 800px;
+    max-height: 2000px;
+    box-shadow: 0px 0px 8px $color-bs;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        h2 {
+            font-size: 50px;
+            margin: 10px 0 30px 0;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+
+    &__body {
+        font-family: 'Kalam', cursive;
+        width: 90%;
+
+        &__title {
+            display: flex;
+            // flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 100%;
+        }
+
+        svg {
+            flex-grow: 1;
+            max-width: 230px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        i {
+            margin-right: 15px;
+        }
+    }
+}
+
+table {
+    width: 100%;
+
+    tr {
+        td {
+            padding: 10px 0;
+
+            &:nth-child(1) {
+                text-align: left;
+            }
+
+            &:nth-child(2) {
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* ------------- menu 1 ------------- */
+.menu1 {
+    background-color: $menu1-color-bg;
+    font-family: 'Devonshire', cursive;
+}
+
+/* ------------- menu 2 ------------- */
+.menu2 {
+    background-color: $menu2-color-bg;
+    font-family: 'Katibeh', cursive;
+
+    h2 {
+        @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
+    }
+
+    .starters {
+        color: $menu2-color-primary;
+        
+
+        #Calque_1 {
+            fill: url(#Calque_1) $menu2-color-primary;
+        }
+
+        @include title-underline($menu2-color-primary);
+    }
+
+    .meals {
+        color: $menu2-color-secondary;
+        #Calque_2 {
+            fill: url(#Calque_2) $menu2-color-secondary;
+        }
+
+        @include title-underline($menu2-color-secondary);
+    }
+
+    .desserts {
+        color: $menu2-color-stop-2;
+        #Calque_3 {
+            fill: url(#Calque_3) $menu2-color-stop-2;
+        }
+
+        @include title-underline($menu2-color-stop-2);
+    }
+}
+
+/* ------------- menu 3 ------------- */
+.menu3 {
+    background-color: $menu3-color-bg;
+   
+    h2 {
+        @include title-gradient($menu3-color-stop-1, $menu3-color-stop-2); 
+        font-family: 'Dancing Script', cursive;
+        margin: 50px;
+        padding: 3px;
+    }
+
+    .starters {
+        #Calque_1 {
+            fill: url(#Calque_1) $menu3-color-stop-1;
+        }
+
+        @include title-underline($menu3-color-stop-1);
+    }
+
+    .meals {
+        #Calque_2 {
+            fill: url(#Calque_2) $menu3-color-medium;
+        }
+
+        @include title-underline($menu3-color-medium);
+    }
+
+    .desserts {
+        #Calque_3 {
+            fill: url(#Calque_3) $menu3-color-stop-2;
+        }
+
+        @include title-underline($menu3-color-stop-2);
+    }
+}
+
+/* ------------- menu 4 ------------- */
+.menu4 {
+    background-color: $menu4-color-bg;
+    
+    h2 {
+        @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
+        font-family: 'Kaushan Script', cursive;
+        margin: 50px;
+        padding: 5px;
+    }
+
+    @include title-underline($menu4-color-stop-2);
+
+    .iconleft {
+        #menu4-gradient-left {
+            --stop-1: #3E923A;
+            --stop-2: #BEFF7F;
+        }
+        
+        fill: url(#menu4-gradient-left);
+    }
+
+    .iconright {
+        #menu4-gradient-right {
+            --stop-1: #BEFF7F;
+            --stop-2: #3E923A;
+        }
+        
+        fill: url(#menu4-gradient-right);
+    }
+
+}

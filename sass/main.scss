@@ -3,21 +3,25 @@
 @import "variables.scss";
 @import "mixin.scss";
 @import "keyframes.scss";
-@import "menu1.scss";
-@import "menu2.scss";
-@import "menu3.scss";
-@import "menu4.scss";
-@import "newdisplaymenu.scss";
+@import "menus.scss";
 
-// MAIN PAGE //
 /* ------------- body ------------- */
 body {
-    @include body;
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    color: $color-txt;
 }
 
 /* ------------- header ------------- */
 header {
-    @include header;
+    background-color: $color-bg;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 30px;
 
     a {
         text-decoration: none;
@@ -65,7 +69,7 @@ header {
 }
 
 .card1 {
-    background-color: #f9d2d2;
+    background-color: $menu1-color-bg;
 
     span {
         &:nth-child(2) {
@@ -94,15 +98,11 @@ i {
 }
 
 .card2 {
-    background-color: #FEF3F3;
+    background-color: $menu2-color-bg;
     font-family: 'Katibeh', cursive;
     span {
         &:nth-child(1) {
-            background: linear-gradient(to bottom right, #ff9900 0%, #e67300 1%, #8080ff 100%);
-            background-clip: border-box;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+            @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
             font-size: 40px;
             margin: 0;
             filter: brightness(120%);
@@ -110,7 +110,7 @@ i {
 
         &:nth-child(2) {
             font-size: 50px;
-            color: #cc7a00;
+            color: #e67300;
             font-weight: normal; //precision//
             margin: 0;
         }
@@ -118,16 +118,12 @@ i {
 }
 
 .card3 {
-    background-color: #eeeef6;
+    background-color: $menu3-color-bg;
 
     span {
         &:nth-child(1) {
+            @include title-gradient($menu3-color-stop-1, $menu3-color-stop-2); 
             font-family: 'Dancing Script', cursive;
-            background: linear-gradient(to bottom right,#0000b3 0%, #3385ff 70%);
-            background-clip: border-box;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
             margin: 0;
             font-size: 40px;
             padding: 3px;
@@ -143,16 +139,12 @@ i {
 }
 
 .card4 {
-    background-color: #fff;
+    background-color: $menu4-color-bg;
     
     span {
         &:nth-child(1) {
             font-family: 'Kaushan Script', cursive;
-            background: linear-gradient(to bottom right, #006600 0%, #bdfd81 70%);
-            background-clip: border-box;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
+            @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
             margin: 0;
             padding: 5px;
             font-size: 40px;
@@ -217,6 +209,24 @@ i {
 
 /* ------------- footer ------------- */
 footer {
-    @include footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-bg;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    a {
+        text-decoration: none;
+        color: $color-txt;
+    }
+    p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+        &:hover {
+            animation: wiggle ease-in-out 500ms infinite;
+        }
+    }
 }
 
+/* ------------- media queries ------------- */
