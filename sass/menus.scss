@@ -47,7 +47,6 @@
 
         &__title {
             display: flex;
-            // flex-direction: row;
             justify-content: space-between;
             align-items: baseline;
             width: 100%;
@@ -89,7 +88,6 @@ table {
             }
 
             &:nth-child(2) {
-                font-weight: bold;
                 text-align: right;
             }
         }
@@ -101,6 +99,21 @@ table {
     background-color: $menu1-color-bg;
     font-family: 'Devonshire', cursive;
     @include title-underline($menu1-color-primary);
+
+    .menu__body__title {
+
+        p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    } 
+
+    td {
+        &:nth-child(2) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
 }
 
 /* ------------- menu 2 ------------- */
@@ -110,6 +123,27 @@ table {
 
     h2 {
         @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
+    }
+
+    table {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        td {
+            &:nth-child(1) {
+                font-size: 25px;
+            }
+            &:nth-child(2) {
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    .menu__body {
+        font-family: $menu2-font-primary;
+        font-size: 30px;
     }
 
     .starters {
@@ -152,6 +186,26 @@ table {
         font-family: $menu3-font-primary;
     }
 
+    .menu__body__title {
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    table {
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        font-size: 20px;
+
+        td {
+            &:nth-child(2) {
+                font-size: 21px;
+            }
+        }
+    }
+
     .starters {
         .menu3-line1 {
             fill: url(.menu3-line1) $menu3-color-stop-1;
@@ -184,6 +238,25 @@ table {
     h2 {
         @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
         font-family: $menu4-font-primary;
+    }
+
+    .menu__body__title {
+        p {
+            font-size: 22px;
+        }
+    }
+
+    table {
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        font-size: 20px;
+
+        td {
+            &:nth-child(2) {
+                font-size: 21px;
+            }
+        }
     }
 
     @include title-underline($menu4-color-stop-2);

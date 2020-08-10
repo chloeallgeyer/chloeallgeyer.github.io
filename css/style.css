@@ -135,7 +135,6 @@ table tr td:nth-child(1) {
   text-align: left;
 }
 table tr td:nth-child(2) {
-  font-weight: bold;
   text-align: right;
 }
 
@@ -156,10 +155,18 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu1 p:hover:after {
   width: 100%;
+}
+.menu1 .menu__body__title p {
+  font-size: 22px;
+  font-weight: bold;
+}
+.menu1 td:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* ------------- menu 2 ------------- */
@@ -173,6 +180,21 @@ table tr td:nth-child(2) {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+.menu2 table {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.menu2 table td:nth-child(1) {
+  font-size: 25px;
+}
+.menu2 table td:nth-child(2) {
+  font-size: 30px;
+}
+.menu2 .menu__body {
+  font-family: "Katibeh", cursive;
+  font-size: 30px;
 }
 .menu2 .starters {
   color: #C77412;
@@ -192,7 +214,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu2 .starters p:hover:after {
   width: 100%;
@@ -215,7 +237,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu2 .meals p:hover:after {
   width: 100%;
@@ -238,7 +260,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu2 .desserts p:hover:after {
   width: 100%;
@@ -256,6 +278,18 @@ table tr td:nth-child(2) {
   background-clip: text;
   font-family: "Dancing Script", cursive;
 }
+.menu3 .menu__body__title p {
+  font-size: 20px;
+}
+.menu3 table {
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  font-size: 20px;
+}
+.menu3 table td:nth-child(2) {
+  font-size: 21px;
+}
 .menu3 .starters .menu3-line1 {
   fill: url(.menu3-line1) #0825DB;
 }
@@ -271,7 +305,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu3 .starters p:hover:after {
   width: 100%;
@@ -291,7 +325,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu3 .meals p:hover:after {
   width: 100%;
@@ -311,7 +345,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu3 .desserts p:hover:after {
   width: 100%;
@@ -329,6 +363,18 @@ table tr td:nth-child(2) {
   background-clip: text;
   font-family: "Kaushan Script", cursive;
 }
+.menu4 .menu__body__title p {
+  font-size: 22px;
+}
+.menu4 table {
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  font-size: 20px;
+}
+.menu4 table td:nth-child(2) {
+  font-size: 21px;
+}
 .menu4 p {
   position: relative;
 }
@@ -341,7 +387,7 @@ table tr td:nth-child(2) {
   left: 0;
   bottom: 0;
   width: 0;
-  transition: width 500ms ease;
+  transition: width 500ms ease-in-out;
 }
 .menu4 p:hover:after {
   width: 100%;
@@ -413,7 +459,7 @@ header a {
   margin: 10px;
   box-shadow: 0px 0px 8px #a6a6a6;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,7 +652,7 @@ footer p:hover {
   }
   .menu h2 {
     font-size: 50px;
-    margin: 30px 0 30px 0;
+    margin: 30px 0 50px 0;
     padding: 0 5px;
   }
   .menu section {

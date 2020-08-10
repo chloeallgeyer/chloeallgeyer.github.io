@@ -19,7 +19,7 @@
             left: 0;
             bottom: 0;
             width: 0;
-            transition: width 500ms ease;
+            transition: width 500ms ease-in-out;
         }
         &:hover:after {
              width: 100%;
