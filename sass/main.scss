@@ -30,7 +30,6 @@ header {
 }
 
 /* ------------- main ------------- */
-
 .block {
     display: flex;
     flex-direction: column;
@@ -57,7 +56,7 @@ header {
         &__card {
             width: 330px;
             height: 330px;
-            margin: 10px;
+            margin: 10 10px 40px 10px;
             box-shadow: 0px 0px 8px $color-bs;
             text-align: center;
             font-size: 18px;
@@ -91,12 +90,14 @@ i {
 
     span {
         color: $menu1-color-primary;
+
         &:nth-child(2) {
             font-family: $menu1-font-primary;
             font-weight: normal;
             font-size: 30px;
             margin: 0;
         }
+
         &:nth-child(3) {
             font-family: $menu1-font-secondary;
             font-size: 40px;
@@ -109,6 +110,7 @@ i {
 .card2 {
     background-color: $menu2-color-bg;
     font-family: $menu2-font-primary;
+
     span {
         &:nth-child(1) {
             @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
@@ -137,6 +139,7 @@ i {
             font-size: 30px;
             padding: 3px;
         }
+
         &:nth-child(2) {
             font-family: $menubody-font;
             font-size: 40px;
@@ -158,6 +161,7 @@ i {
             padding: 5px;
             font-size: 30px;
         }
+
         &:nth-child(2) {
             font-family: $menubody-font;
             font-size: 40px;
@@ -194,9 +198,11 @@ i {
     background-color: $color-txt;
     display: inline-block;
     animation: loading-dots 2s infinite ease-in-out;
+
     &:nth-child(2) {
     animation-delay: 0.5s;
     }
+
     &:nth-child(3) {
     animation-delay: 1s;
     }
@@ -249,6 +255,7 @@ footer {
     .menucontainer h1 {
         font-size: 30px;
     }
+    
     .menu {
         margin: 20px 30px 100px 30px;
         padding: 80px 30px 80px 30px;
