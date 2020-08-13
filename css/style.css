@@ -277,6 +277,7 @@ table tr td:nth-child(2) {
   -webkit-background-clip: text;
   background-clip: text;
   font-family: "Dancing Script", cursive;
+  padding-left: 3px;
 }
 .menu3 .menu__body__title p {
   font-size: 20px;
@@ -362,6 +363,7 @@ table tr td:nth-child(2) {
   -webkit-background-clip: text;
   background-clip: text;
   font-family: "Kaushan Script", cursive;
+  padding-right: 3px;
 }
 .menu4 .menu__body__title p {
   font-size: 22px;
@@ -489,19 +491,19 @@ i {
 .card1 {
   background-color: #f9d2d2;
 }
+.card1 span {
+  color: black;
+}
 .card1 span:nth-child(2) {
   font-family: "Devonshire", cursive;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
-  color: black;
 }
 .card1 span:nth-child(3) {
   font-family: "Sriracha", cursive;
-  font-size: 50px;
-  font-weight: lighter;
+  font-size: 40px;
   margin: 0;
-  color: black;
 }
 
 /* ------------- card 2 ------------- */
@@ -515,14 +517,13 @@ i {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
   filter: brightness(120%);
 }
 .card2 span:nth-child(2) {
-  font-size: 50px;
+  font-size: 40px;
   color: #C77412;
-  font-weight: normal;
   margin: 0;
 }
 
@@ -538,13 +539,12 @@ i {
   background-clip: text;
   font-family: "Dancing Script", cursive;
   margin: 0;
-  font-size: 40px;
+  font-size: 30px;
   padding: 3px;
 }
 .card3 span:nth-child(2) {
   font-family: "Kalam", cursive;
-  font-size: 50px;
-  font-weight: normal;
+  font-size: 40px;
   color: #0670F3;
   margin: 0;
 }
@@ -562,12 +562,11 @@ i {
   background-clip: text;
   margin: 0;
   padding: 5px;
-  font-size: 40px;
+  font-size: 30px;
 }
 .card4 span:nth-child(2) {
   font-family: "Kalam", cursive;
-  font-size: 50px;
-  font-weight: normal;
+  font-size: 40px;
   color: #72BF56;
   margin: 0;
 }
@@ -635,7 +634,12 @@ footer p:hover {
     width: 400px;
     height: 600px;
     margin: 30px;
-    font-size: 30px;
+  }
+  .block__item__card span:nth-child(1) {
+    font-size: 40px;
+  }
+  .block__item__card span:nth-child(2) {
+    font-size: 50px;
   }
 
   .menucontainer h1 {

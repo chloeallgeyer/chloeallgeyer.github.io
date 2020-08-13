@@ -90,19 +90,17 @@ i {
     background-color: $menu1-color-bg;
 
     span {
+        color: $menu1-color-primary;
         &:nth-child(2) {
             font-family: $menu1-font-primary;
             font-weight: normal;
-            font-size: 40px;
+            font-size: 30px;
             margin: 0;
-            color: $menu1-color-primary; //DRY//
         }
         &:nth-child(3) {
             font-family: $menu1-font-secondary;
-            font-size: 50px;
-            font-weight: lighter; //precision//
+            font-size: 40px;
             margin: 0;
-            color: $menu1-color-primary; //DRY//
         }
     }
 }
@@ -114,15 +112,14 @@ i {
     span {
         &:nth-child(1) {
             @include title-gradient($menu2-color-stop-1, $menu2-color-stop-2);
-            font-size: 40px;
+            font-size: 30px;
             margin: 0;
             filter: brightness(120%);
         }
 
         &:nth-child(2) {
-            font-size: 50px;
+            font-size: 40px;
             color: $menu2-color-primary;
-            font-weight: normal; //precision//
             margin: 0;
         }
     }
@@ -137,13 +134,12 @@ i {
             @include title-gradient($menu3-color-stop-1, $menu3-color-stop-2); 
             font-family: $menu3-font-primary;
             margin: 0;
-            font-size: 40px;
+            font-size: 30px;
             padding: 3px;
         }
         &:nth-child(2) {
             font-family: $menubody-font;
-            font-size: 50px;
-            font-weight: normal; //precision//
+            font-size: 40px;
             color: $menu3-color-medium;
             margin: 0;
         }
@@ -160,12 +156,11 @@ i {
             @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
             margin: 0;
             padding: 5px;
-            font-size: 40px;
+            font-size: 30px;
         }
         &:nth-child(2) {
             font-family: $menubody-font;
-            font-size: 50px;
-            font-weight: normal; //precision//
+            font-size: 40px;
             color: $menu4-color-medium;
             margin: 0;
         }
@@ -239,7 +234,16 @@ footer {
         width: 400px;
         height: 600px;
         margin: 30px;
-        font-size: 30px;
+
+        span {
+            &:nth-child(1) {
+                font-size: 40px;
+            }
+
+            &:nth-child(2) {
+                font-size: 50px;
+            }
+        }   
     }
 
     .menucontainer h1 {

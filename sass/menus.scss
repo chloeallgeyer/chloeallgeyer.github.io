@@ -184,6 +184,7 @@ table {
     h2 {
         @include title-gradient($menu3-color-stop-1, $menu3-color-stop-2); 
         font-family: $menu3-font-primary;
+        padding-left: 3px;
     }
 
     .menu__body__title {
@@ -238,6 +239,7 @@ table {
     h2 {
         @include title-gradient($menu4-color-stop-1, $menu4-color-stop-2);
         font-family: $menu4-font-primary;
+        padding-right: 3px;
     }
 
     .menu__body__title {
@@ -263,8 +265,8 @@ table {
 
     .iconleft {
         #menu4-gradient-left {
-            --stop-1: #3E923A; //l'insertion de variables ne fonctionne pas//
-            --stop-2: #BEFF7F; //l'insertion de variables ne fonctionne pas//
+            --stop-1: #3E923A; 
+            --stop-2: #BEFF7F; 
         }
         
         fill: url(#menu4-gradient-left);
@@ -272,11 +274,10 @@ table {
 
     .iconright {
         #menu4-gradient-right {
-            --stop-1: #BEFF7F; //l'insertion de variables ne fonctionne pas//
-            --stop-2: #3E923A; //l'insertion de variables ne fonctionne pas//
+            --stop-1: #BEFF7F; 
+            --stop-2: #3E923A; 
         }
         
         fill: url(#menu4-gradient-right);
     }
-
 }
