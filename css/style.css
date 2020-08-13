@@ -18,42 +18,24 @@ h2, h3, h4, h5, h6 {
 @keyframes loading-dots {
   50% {
     opacity: 0;
-    transform: scale(0.7) translateY(5px);
+    transform: translateY(5px);
   }
 }
 @keyframes wiggle {
   0% {
-    transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(2px, 2px) rotate(0deg);
   }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
+  25% {
+    transform: translate(2px, -2px) rotate(1deg);
   }
   50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-2px, 2px) rotate(-1deg);
   }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
+  75% {
+    transform: translate(2px, 2px) rotate(1deg);
   }
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
 }
 /* ------------- general ------------- */
@@ -151,7 +133,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: black;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -210,7 +191,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #C77412;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -233,7 +213,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #990099;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -256,7 +235,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #8F5AFF;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -302,7 +280,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #0825DB;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -322,7 +299,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #0670F3;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -342,7 +318,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #0889FB;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -385,7 +360,6 @@ table tr td:nth-child(2) {
   position: absolute;
   height: 3px;
   background-color: #BEFF7F;
-  border-radius: 4rem;
   left: 0;
   bottom: 0;
   width: 0;
@@ -458,7 +432,7 @@ header a {
 .block__item__card {
   width: 330px;
   height: 330px;
-  margin: 10px;
+  margin: 10 10px 40px 10px;
   box-shadow: 0px 0px 8px #a6a6a6;
   text-align: center;
   font-size: 18px;
@@ -625,7 +599,7 @@ footer p {
   text-align: center;
 }
 footer p:hover {
-  animation: wiggle ease-in-out 500ms infinite;
+  animation: wiggle ease-in-out 400ms infinite;
 }
 
 /* ------------- media queries ------------- */
