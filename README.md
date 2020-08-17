@@ -1,12 +1,11 @@
-# P3
+# P3 Openclassrooms
 
-### description
+Lien vers [la page web](https://chloeallgeyer.github.io/)
 
-* 1
-* 2
+
+
 
 Run sass:
-
 ```
 sass --watch sass/main.scss:css/style.css
 ```

@@ -56,7 +56,7 @@ header {
         &__card {
             width: 330px;
             height: 330px;
-            margin: 10 10px 40px 10px;
+            margin: 20px;
             box-shadow: 0px 0px 8px $color-bs;
             text-align: center;
             font-size: 18px;
@@ -235,7 +235,7 @@ footer {
 }
 
 /* ------------- media queries ------------- */
-@media (min-width: 768px) {
+@media (min-width: 756px) {
     .block__item__card {
         width: 400px;
         height: 600px;

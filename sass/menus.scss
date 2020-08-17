@@ -98,9 +98,9 @@ table {
 .menu1 {
     background-color: $menu1-color-bg;
     font-family: 'Devonshire', cursive;
-    @include title-underline($menu1-color-primary);
 
     .menu__body__title {
+        @include title-underline($menu1-color-primary);
 
         p {
             font-size: 22px;

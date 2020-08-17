@@ -11,13 +11,13 @@
         position: relative;
         
         &:after {
-            content: ' ';
+            content: '';
             position: absolute;
             height: 3px;
             background-color: $color;
             left: 0;
             bottom: 0;
-            width: 0;
+            width: 0%;
             transition: width 500ms ease-in-out;
         }
         &:hover:after {
