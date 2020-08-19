@@ -110,13 +110,13 @@ h2, h3, h4, h5, h6 {
 table {
   width: 100%;
 }
-table tr td {
+table td {
   padding: 10px 0;
 }
-table tr td:nth-child(1) {
+table td:nth-child(1) {
   text-align: left;
 }
-table tr td:nth-child(2) {
+table td:nth-child(2) {
   text-align: right;
 }
 

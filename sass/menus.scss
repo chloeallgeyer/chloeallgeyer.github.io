@@ -79,17 +79,15 @@
 table {
     width: 100%;
 
-    tr {
-        td {
-            padding: 10px 0;
+    td {
+        padding: 10px 0;
 
-            &:nth-child(1) {
-                text-align: left;
-            }
+        &:nth-child(1) {
+            text-align: left;
+        }
 
-            &:nth-child(2) {
-                text-align: right;
-            }
+         &:nth-child(2) {
+            text-align: right;
         }
     }
 }
@@ -187,11 +185,8 @@ table {
         padding-left: 3px;
     }
 
-    .menu__body__title {
-
-        p {
-            font-size: 20px;
-        }
+    .menu__body__title p {
+        font-size: 20px;
     }
 
     table {
@@ -242,10 +237,8 @@ table {
         padding-right: 3px;
     }
 
-    .menu__body__title {
-        p {
-            font-size: 22px;
-        }
+    .menu__body__title p {
+        font-size: 22px;
     }
 
     table {
