@@ -446,8 +446,8 @@ header a {
   margin-bottom: 0;
 }
 .block__item__card {
-  width: 330px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
   margin: 20px;
   box-shadow: 0px 0px 8px #a6a6a6;
   text-align: center;
