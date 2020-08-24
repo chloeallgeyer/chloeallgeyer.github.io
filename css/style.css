@@ -119,6 +119,9 @@ table tr td {
   padding: 10px 0;
   text-align: center;
 }
+table tr td:nth-child(2) {
+  margin-left: 15px;
+}
 
 /* ------------- menu 1 ------------- */
 .menu1 {
@@ -169,10 +172,10 @@ table tr td {
   margin: auto;
 }
 .menu2 table td:nth-child(1) {
-  font-size: 25px;
+  font-size: 22px;
 }
 .menu2 table td:nth-child(2) {
-  font-size: 30px;
+  font-size: 25px;
 }
 .menu2 .menu__body {
   font-family: "Katibeh", cursive;
@@ -270,10 +273,10 @@ table tr td {
   text-align: center;
   width: 85%;
   margin: auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 .menu3 table td:nth-child(2) {
-  font-size: 21px;
+  font-size: 19px;
 }
 .menu3 .starters .menu3-line1 {
   fill: url(.menu3-line1) #0825DB;
@@ -358,10 +361,10 @@ table tr td {
   text-align: center;
   width: 85%;
   margin: auto;
-  font-size: 20px;
+  font-size: 16px;
 }
 .menu4 table td:nth-child(2) {
-  font-size: 21px;
+  font-size: 19px;
 }
 .menu4 p {
   position: relative;
