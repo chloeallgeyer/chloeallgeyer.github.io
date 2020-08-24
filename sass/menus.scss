@@ -79,15 +79,14 @@
 table {
     width: 100%;
 
-    td {
-        padding: 10px 0;
+    tr {
+        display: flex;
+        flex-direction: column;
 
-        &:nth-child(1) {
-            text-align: left;
-        }
-
-         &:nth-child(2) {
-            text-align: right;
+        td {
+            display: inline-block;
+            padding: 10px 0;
+            text-align: center;
         }
     }
 }
@@ -257,20 +256,10 @@ table {
     @include title-underline($menu4-color-stop-2);
 
     .iconleft {
-        // #menu4-gradient-left {
-        //     --stop-1: #3E923A; 
-        //     --stop-2: #BEFF7F; 
-        // }
-        
         fill: url(#menu4-gradient-left);
     }
 
     .iconright {
-        // #menu4-gradient-right {
-        //     --stop-1: #BEFF7F; 
-        //     --stop-2: #3E923A; 
-        // }
-        
         fill: url(#menu4-gradient-right);
     }
 }

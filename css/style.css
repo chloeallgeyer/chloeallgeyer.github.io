@@ -110,14 +110,14 @@ h2, h3, h4, h5, h6 {
 table {
   width: 100%;
 }
-table td {
+table tr {
+  display: flex;
+  flex-direction: column;
+}
+table tr td {
+  display: inline-block;
   padding: 10px 0;
-}
-table td:nth-child(1) {
-  text-align: left;
-}
-table td:nth-child(2) {
-  text-align: right;
+  text-align: center;
 }
 
 /* ------------- menu 1 ------------- */
@@ -636,6 +636,20 @@ footer p:hover {
   }
   .menu section {
     margin-bottom: 30px;
+  }
+  .menu table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu table tr td {
+    padding: 10px 0;
+  }
+  .menu table tr td:nth-child(1) {
+    text-align: left;
+  }
+  .menu table tr td:nth-child(2) {
+    text-align: right;
   }
 }
 
