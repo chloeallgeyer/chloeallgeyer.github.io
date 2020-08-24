@@ -257,19 +257,19 @@ table {
     @include title-underline($menu4-color-stop-2);
 
     .iconleft {
-        #menu4-gradient-left {
-            --stop-1: #3E923A; 
-            --stop-2: #BEFF7F; 
-        }
+        // #menu4-gradient-left {
+        //     --stop-1: #3E923A; 
+        //     --stop-2: #BEFF7F; 
+        // }
         
         fill: url(#menu4-gradient-left);
     }
 
     .iconright {
-        #menu4-gradient-right {
-            --stop-1: #BEFF7F; 
-            --stop-2: #3E923A; 
-        }
+        // #menu4-gradient-right {
+        //     --stop-1: #BEFF7F; 
+        //     --stop-2: #3E923A; 
+        // }
         
         fill: url(#menu4-gradient-right);
     }

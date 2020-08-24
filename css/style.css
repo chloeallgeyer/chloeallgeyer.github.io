@@ -162,7 +162,6 @@ table td:nth-child(2) {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 .menu2 table {
   text-align: center;
@@ -261,7 +260,6 @@ table td:nth-child(2) {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Dancing Script", cursive;
   padding-left: 3px;
 }
@@ -350,7 +348,6 @@ table td:nth-child(2) {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Kaushan Script", cursive;
   padding-right: 3px;
 }
@@ -387,16 +384,8 @@ table td:nth-child(2) {
 .menu4 .iconleft {
   fill: url(#menu4-gradient-left);
 }
-.menu4 .iconleft #menu4-gradient-left {
-  --stop-1: #3E923A;
-  --stop-2: #BEFF7F;
-}
 .menu4 .iconright {
   fill: url(#menu4-gradient-right);
-}
-.menu4 .iconright #menu4-gradient-right {
-  --stop-1: #BEFF7F;
-  --stop-2: #3E923A;
 }
 
 /* ------------- body ------------- */
@@ -462,7 +451,6 @@ i {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .title-wraper {
@@ -506,7 +494,6 @@ i {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-size: 30px;
   margin: 0;
   filter: brightness(120%);
@@ -526,7 +513,6 @@ i {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-family: "Dancing Script", cursive;
   margin: 0;
   font-size: 30px;
@@ -549,7 +535,6 @@ i {
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   margin: 0;
   padding: 5px;
   font-size: 30px;
