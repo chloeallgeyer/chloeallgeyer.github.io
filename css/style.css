@@ -119,9 +119,6 @@ table tr td {
   padding: 10px 0;
   text-align: center;
 }
-table tr td:nth-child(2) {
-  margin-left: 15px;
-}
 
 /* ------------- menu 1 ------------- */
 .menu1 {
@@ -653,6 +650,7 @@ footer p:hover {
   }
   .menu table tr td:nth-child(2) {
     text-align: right;
+    margin-left: 20px;
   }
 }
 
